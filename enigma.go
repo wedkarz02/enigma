@@ -1,11 +1,13 @@
 package main
 
 import (
+	c "enigma/pkg/consts"
+
 	rl "github.com/gen2brain/raylib-go/raylib"
 )
 
 func main() {
-	rl.InitWindow(600, 800, "Enigma")
+	rl.InitWindow(c.WINDOW_WIDTH, c.WINDOW_HEIGHT, "Enigma")
 	defer rl.CloseWindow()
 	rl.SetTargetFPS(60)
 
