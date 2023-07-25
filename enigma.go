@@ -12,21 +12,13 @@ func main() {
 	defer rl.CloseWindow()
 	rl.SetTargetFPS(60)
 
-	fonts := gui.InitFonts()
+	app := gui.InitApp()
 
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
 
 		rl.ClearBackground(rl.Black)
-		// rl.DrawText("Enigma", 250, 350, 50, rl.White)
-		rl.DrawTextEx(fonts["jbmr"],
-			"Enigma",
-			rl.Vector2{
-				X: 250, Y: 350,
-			},
-			48, 0,
-			rl.White,
-		)
+		app.DrawKeys()
 
 		rl.EndDrawing()
 	}

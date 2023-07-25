@@ -6,3 +6,6 @@ const (
 )
 
 const FONTS_PATH = "./assets/fonts/ttf/"
+
+const KEY_SET = "QWERTYUIOPASDFGHJKLZXCVBNM"
+const KEY_SIZE = 48
